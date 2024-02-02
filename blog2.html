@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Blog Post 1</title>
+    <link rel="stylesheet" href="light-mode.css" id="themeStyles">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .comments p {
+            background-color: #f9f9f9;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+            word-wrap: break-word;
+            max-width: 400px;
+            overflow: hidden;
+            box-sizing: border-box;
+            color: #333; 
+        }
+    
+        .comments {
+            max-height: 400px;
+            overflow-y: auto;
+            background-color: #fff; 
+        }
+    
+        body.dark-mode .comments p {
+            background-color: #333;
+            color: #fff; 
+        }
+    
+        body.dark-mode .comments {
+            background-color: #1a1a1a; 
+        }
+    </style>
+    
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+            <a href="index.html" class="nav-link"id="diff">Home</a>
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <span class="icon" id="themeIcon">&#127769;</span>
+        </div>
+    </div>
+</nav>
+
+<section class="blog" id="blog">
+    <h2>My Blog</h2>
+
+    <article class="blog-post" id="blog1">
+        <h3>Blog Title 1</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis cum fuga, nam consequatur eaque ut dolorum ratione excepturi laborum optio suscipit repellendus veritatis perspiciatis totam esse. Nostrum magni mollitia quae vitae delectus eius eaque aperiam quod facilis et, obcaecati sunt nemo ea, enim laboriosam? Obcaecati rem harum voluptas nulla cumque possimus, deleniti recusandae earum ratione unde officia dicta perspiciatis, iste fugiat quibusdam, autem quae maxime voluptatem debitis praesentium laborum molestiae eius facere pariatur! Cupiditate tempora provident, quos debitis eligendi nisi quae eaque delectus cumque voluptate, culpa, est quas corrupti perferendis sapiente velit repellendus. Quidem sunt libero itaque possimus, esse voluptate quibusdam, ipsam expedita perferendis rem nobis odio, aut assumenda aliquid mollitia delectus quaerat. Voluptate explicabo nulla enim fugit totam consectetur veritatis, inventore sequi hic nesciunt iste assumenda rem. Quam repellat nulla, quo nemo quod velit reprehenderit libero ex placeat eaque, tenetur, commodi ipsam repellendus earum dignissimos autem dolor. Distinctio provident cum recusandae doloremque, nostrum veritatis. Natus praesentium laborum doloribus quo tempora? Accusantium, beatae quidem maxime perferendis id, nemo earum expedita placeat ea sint voluptatem iusto saepe quo similique repellat at magni quod cumque. Repudiandae cumque nemo a aspernatur harum, optio quaerat error quis! Quisquam quas, esse iste recusandae nemo numquam sequi omnis qui dignissimos facere rem, sapiente laboriosam magni nostrum autem vero suscipit inventore soluta vitae enim veritatis! Voluptatibus dolorem culpa nisi laboriosam veritatis voluptatum officia laudantium molestias. Optio sit repellat quos molestiae iure, ipsum nostrum. Non dolorum fugiat ab. Quibusdam similique assumenda dolorem aperiam. Laudantium veniam excepturi molestiae deleniti laborum dicta hic deserunt possimus minus facilis ab perspiciatis, omnis delectus odit eos, error, atque pariatur odio modi fuga ratione! Nam ducimus non, similique nostrum illum nobis quod veritatis quis quia nisi odio minima error vero temporibus tenetur sint veniam nulla soluta, labore repellendus sapiente laborum laboriosam ea id! Earum repellat aspernatur, sapiente nulla nemo maiores? Repellendus debitis temporibus beatae suscipit ducimus, amet nesciunt nemo distinctio! Sit sapiente soluta iure tempora, fuga deleniti consectetur distinctio excepturi at, similique aliquid. Aut vero aspernatur tenetur ea quibusdam voluptatem hic nisi assumenda perspiciatis enim fuga dolorum obcaecati amet, nihil impedit vitae cupiditate velit officiis numquam soluta reiciendis libero non debitis quidem. Doloribus dolorem repudiandae illo accusantium. Cum delectus quae tempora quis debitis praesentium, quos blanditiis sit. Cumque aliquam quo, natus iste animi ex dolorem voluptates sit quisquam reiciendis tempora, eaque praesentium suscipit voluptatibus consectetur earum commodi modi molestiae rerum.</p>
+        <div>
+            <button onclick="likeBlog(1)">Like</button>
+            <span id="likeCounter1" class="like-counter">0</span>
+        </div>
+
+        <div>
+            <input type="text" id="commentInput1" placeholder="Add a comment">
+            <button onclick="addComment(1)">Add Comment</button>
+        </div>
+        <div id="comments1" class="comments">
+        </div>
+
+        <button onclick="clearLocalStorage(1)">Clear Likes and Comments</button>
+    </article></section>
+
+<script src="script.js"></script>
+</body>
+</html>

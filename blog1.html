@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Blog Post 1</title>
+    <link rel="stylesheet" href="light-mode.css" id="themeStyles">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .comments p {
+            background-color: #f9f9f9;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+            word-wrap: break-word;
+            max-width: 400px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .comments {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+            <a href="index.html" class="nav-link" id="diff">Home</a>
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <span class="icon" id="themeIcon">&#127769;</span>
+        </div>
+    </div>
+</nav>
+
+<section class="blog" id="blog">
+    <h2>My Blog</h2>
+
+    <article class="blog-post" id="blog1">
+        <h3>Blog Title 1</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis cum fuga, nam consequatur eaque ut dolorum ratione excepturi laborum optio suscipit repellendus veritatis perspiciatis totam esse. Nostrum magni Voluptate nobis aliquid expedita magnam eum. Consequatur nesciunt error blanditiis tenetur aliquid. Ipsa aliquid, ipsum molestias magnam voluptatibus eligendi debitis optio. Beatae ipsum illum delectus fugiat doloribus suscipit voluptate soluta libero tenetur blanditiis quam, odit commodi, neque assumenda harum asperiores ab, magnam deserunt! Laudantium harum molestiae quibusdam ullam voluptates ex aperiam sed quod! Dignissimos impedit quod porro veritatis quis quia nisi odio minima error vero temporibus tenetur sint veniam nulla soluta, labore repellendus sapiente laborum laboriosam ea id! Earum repellat aspernatur, sapiente nulla nemo maiores? Repellendus debitis temporibus beatae suscipit ducimus, amet nesciunt nemo distinctio! Sit sapiente soluta iure tempora, fuga deleniti consectetur distinctio excepturi at, similique aliquid. Aut vero aspernatur tenetur ea quibusdam voluptatem hic nisi assumenda perspiciatis enim fuga dolorum obcaecati amet, nihil impedit vitae cupiditate velit officiis numquam soluta reiciendis libero non debitis quidem. Doloribus dolorem repudiandae illo accusantium. Cum delectus quae tempora quis debitis praesentium, quos blanditiis sit. Cumque aliquam quo, natus iste animi ex dolorem voluptates sit quisquam reiciendis tempora, eaque praesentium suscipit voluptatibus consectetur earum commodi modi molestiae rerum.</p>
+        <div>
+            <button onclick="likeBlog(1)">Like</button>
+            <span id="likeCounter1" class="like-counter">0</span>
+        </div>
+
+        <div>
+            <input type="text" id="commentInput1" placeholder="Add a comment">
+            <button onclick="addComment(1)">Add Comment</button>
+        </div>
+        <div id="comments1" class="comments">
+        </div>
+
+        <button onclick="clearLocalStorage(1)">Clear Likes and Comments</button>
+    </article></section>
+
+<script src="script.js"></script>
+</body>
+</html>
